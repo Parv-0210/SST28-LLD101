@@ -4,8 +4,4 @@ public class TreasurerTool implements ClubAdminTools {
 
     @Override public void addIncome(double amt, String note) { ledger.add(amt, note); }
     @Override public void addExpense(double amt, String note) { ledger.add(-amt, note); }
-
-    @Override public void addMinutes(String text) { /* irrelevant */ }
-    @Override public void createEvent(String name, double budget) { /* irrelevant */ }
-    @Override public int getEventsCount() { return 0; } // dummy
 }
